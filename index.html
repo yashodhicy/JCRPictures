@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="projectdata.js"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav id="mobile-nav">
+            <button class="menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+        <button id="cancel-btn" class="hide"></button>
+    </header>
+
+    <main>
+        <section id="container">
+            <nav id="desktop-nav" class="mobile-menu">
+                <ul id="mobilelist">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#container2">About</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <div class="aboutme">
+                    <h1>Hey there.
+                        I’m Yashi.</h1>
+                    <h2 class="job"> I’m a software developer</h2>
+                    <p> I can help you build a product , feature or website Look through some of my work and experience!
+                        If you like what you see and have a project you need coded,
+                        don’t hesitate to contact me.</p>
+                </div>
+                <div class="icon-bar">
+                    <ul>
+                        <li><i><a class="iconan" href="https://www.twitter.com"><img src="images/twitter.png"
+                                        alt="twitter logo"> </a></i></li>
+                        <li><i> <a class="iconan" href="https://www.Linkedin.com"><img src="images/Linkedin icon.png"
+                                        alt="Linkedin logo"></a></i></li>
+                        <li><i> <a class="iconan" href="https://www.Medium.com"><img src="images/medium.png"
+                                        alt="medium logo"></a></i></li>
+                        <li><i> <a class="iconan" href="https://www.github.com"><img src="images/github.png"
+                                        alt="github logo"></a></i></li>
+                        <li><i> <a class="iconan" href="www.angellist.com"><img src="images/angellist.png"
+                                        alt="angellist logo"></a></i></li>
+                    </ul>
+                </div>
+                <button id="action"></button>
+            </div>
+        </section>
+
+        <div id="topic">
+            <h2>My Recent Works</h2>
+            <div class="line2"></div>
+        </div>
+
+        <!-- popup menu -->
+        <!-- <div id="popup-overlay"></div> -->
+        <div id="popup" class="hide">
+            <button id="cancel-btn2"></button>
+            
+            <img id="popup-image">
+            <div id="content">
+            <div id="primary-text">
+            <h2 id="popup-title">test</h2>
+            <ul id="popup-techs"></ul>
+            </div>
+            <p id="popup-description"></p>
+            <div class="button-group">
+                <button id="popup-livelink" class="button linkbutton">See Live<img class="livelink" src="images/seelive.png"></button>
+                <button id="popup-source" class="button linkbutton">See Source<img class="livelink" src="images/gitwhite.png"></button>
+            </div>
+            </div>
+        </div>
+        <!-- end of the popup menu -->
+        <section id="container2">
+            <div class="aboutme">
+                <h2>About me</h2>
+                <p>
+                    I can help you build a product , feature or website Look through some of my work and experience! If
+                    you like what you see and have a project you need coded,
+                    don’t hesitate to contact me.
+                    Get my resume
+                </p>
+                <a class="project-ancor" href="https://github.com/yashodhicy/Microverseday3pr">
+                    <button class="see_project">Get my resume</button>
+                </a>
+            </div>
+            <div class="background2"></div>
+        </section>
+
+        <section class="work">
+            <div class="work-card2">
+                <div class="image">
+                    <img src="images/icon-languages.png" alt="logo languages">
+                </div>
+                <h3>Languages</h3>
+                <ul>
+                    <li class="list"><button class="but"> JavaScript</button></li>
+                    <li class="list"><button class="but"> Ruby</button></li>
+                    <li class="list"><button class="but"> HTML</button></li>
+                    <li class="list"><button class="but"> CSS</button></li>
+                </ul>
+            </div>
+            <div class="work-card2">
+                <div class="image">
+                    <img src="images/icon-frameworks.png" alt="logo frameworks">
+                </div>
+                <h3>Frameworks </h3>
+                <ul>
+                    <li class="list"><button class="but"> React.js</button></li>
+                    <li class="list"><button class="but"> Ruby on Rails</button></li>
+                    <li class="list"><button class="but"> RSpec</button></li>
+                    <li class="list"><button class="but"> Capybara</button></li>
+                    <li class="list"><button class="but"> Selenium</button></li>
+                </ul>
+            </div>
+            <div class="work-card2">
+                <div class="image">
+                    <img src="images/icon-skills.png" alt="logo skills">
+                </div>
+                <h3>Skills</h3>
+                <ul>
+                    <li class="list"><button class="but"> Database Management</button></li>
+                    <li class="list"><button class="but"> Version control</button></li>
+                    <li class="list"><button class="but"> CLI</button></li>
+                    <li class="list"><button class="but"> Web Development</button></li>
+                    <li class="list"><button class="but"> API design</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- contact-form -->
+
+        <section id="contact-form">
+            <h2 id="msg">I'm always interested in hearing about new projects, so if you'd like to chat please get in
+                touch.</h2>
+            <form id="form" action="https://formspree.io/f/xlekprob" method="post">
+                <input type="text" placeholder="Full name" maxlength="30" name="username" required
+                    title="Please enter your name.">
+                <input type="email" placeholder="Email address" name="email" required itle="Please enter your email.">
+                <textarea name="message" maxlength="500" placeholder="Hey I'd like to connect to" required></textarea>
+                <button type="submit">Get in touch</button>
+                <a href="#">yashodhichathurangi94@gmail.com</a>
+            </form>
+            <div class="formbackground1"></div>
+            <div class="formbackground2"></div>
+            <div class="formbackground3"></div>
+        </section>
+        <footer>
+            <div class="icon-bar">
+                <ul>
+                    <li><i><a class="iconan" href="https://www.twitter.com"><img src="images/twitter.png"
+                                    alt="twitter logo">
+                            </a></i></li>
+                    <li><i> <a class="iconan" href="https://www.Linkedin.com"><img src="images/Linkedin icon.png"
+                                    alt="Linkedin logo"></a></i></li>
+                    <li><i> <a class="iconan" href="https://www.Medium.com"><img src="images/medium.png"
+                                    alt="medium logo"></a></i></li>
+                    <li><i> <a class="iconan" href="https://www.github.com"><img src="images/github.png"
+                                    alt="github logo"></a></i></li>
+                    <li><i> <a class="iconan" href="www.angellist.com"><img src="images/angellist.png"
+                                    alt="angellist logo"></a></i></li>
+                </ul>
+            </div>
+            <div class="line3"></div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
