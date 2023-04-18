@@ -4,21 +4,23 @@ html {
 
 body{
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: 'Lato',sans-serif;
-  font-weight: 400;
  }
 
- /* section {
+ section {
   height: auto;
   position: relative;
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 0;
   width: 100%;
-} */
+  font-family: 'Lato',sans-serif;
+  font-style: normal;
+}
 
 header{
   background-color: white;
@@ -30,7 +32,7 @@ header{
   height: 3.9rem;
   width: 100%;
   margin: 0;
-  z-index: 5;
+  z-index: 999;
 }
 
 
@@ -106,10 +108,11 @@ header{
 #mobile-menu {
   position: fixed;
   justify-content: left;
-  background: rgb(53, 53, 53);
+  background: #3b3e45;
   height: 100vh;
   width: 100%;
   top:4rem;
+  z-index: 998;
   
 }
 
@@ -132,3 +135,116 @@ header{
   text-decoration: none;
 }
 
+/* #introduction section */
+
+#introduction{
+  background-image: url(images/stars.jpg);
+  background-size: cover;
+  margin-top: 4rem;
+  min-height: 30rem;
+}
+
+#introduction div {
+  background-color: #f8f8f8;
+  opacity: 75%;
+  min-height: 30rem;
+  width: 100%;
+
+}
+
+#intro h1{
+  background:url(images/cinema.webp);
+  background-size: contain;
+  font-size: 48px;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 0.625rem;
+}
+
+#intro h1::before{
+  content: "Hello world of cinema";
+  color:#FF5438;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.625rem;
+}
+
+.description {
+  border: 3px solid white;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+time {
+  color:#595959;
+  font-size: 20px;
+}
+
+#intro h3 {
+  color:#3b3e45;
+  padding: 10px;
+}
+
+
+ /* event section  */
+#event {
+  background: url(pattern_bg.png), #282B32;
+  mix-blend-mode: normal;
+  padding-bottom: 1rem;
+}
+
+#eventtitle {
+  color:white;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+
+#agenda {
+    display: grid;
+    width: 95%;
+    grid-template-columns: auto;
+    gap: 0.313rem;
+    padding: 0.688rem 0.75rem;
+  }
+
+.card {
+  Display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0;
+  gap: 0.558rem;
+  background: url(pattern_bg.png), #3B3E45;
+}
+
+.card h2 {
+  flex:2;
+  font-size: small;
+  color: #FF5438;
+  padding: 0.625rem;
+  width: 20%;
+}
+
+.card p {
+  flex:4;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.669rem;
+  line-height: 22px;
+}
+
+#event button {
+  background-color:#FF5438 ;
+  width:12rem;
+  height: 3rem;
+  margin: auto;
+  border: none;
+  color: #FFFFFF;
+}
