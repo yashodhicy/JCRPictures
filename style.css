@@ -145,7 +145,7 @@ header nav a {
   background-color: white;
   height: 2rem;
   margin-top: 1rem;
-  font-family: 'lato',sans-serif;
+  font-family: 'lato', sans-serif;
 }
 
 /* #introduction section */
@@ -606,7 +606,7 @@ footer p {
   }
 
   #namelist {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .partnershide {
@@ -650,7 +650,6 @@ footer p {
   }
 
   #footeraobout p {
-    color:#f8f8f8;
-    
+    color: #f8f8f8;
   }
 }
