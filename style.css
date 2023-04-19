@@ -1,0 +1,422 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'lato', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: auto;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 3.9rem;
+  width: 100%;
+  margin: 0;
+  z-index: 999;
+}
+
+.hide {
+  display: none;
+}
+
+#mobile-nav {
+  display: flex;
+  width: 100%;
+}
+
+#logo {
+  align-self: center;
+  height: 3rem;
+  width: 5rem;
+  margin: auto;
+}
+
+.hamburger,
+.rotate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+  width: 2.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  gap: 0.4rem;
+}
+
+.hamburger :nth-child(3) {
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #737272;
+}
+
+/* cancel button in the mobile hamburger button */
+
+.rotate span {
+  position: absolute;
+}
+
+.rotate :nth-child(1),
+.rotate :nth-child(4) {
+  display: none;
+}
+
+.rotate :nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.rotate :nth-child(3) {
+  display: flex;
+  transform: rotate(-45deg);
+}
+
+.rotate :nth-child(2),
+.rotate:nth-child(3) {
+  top: 50%;
+}
+
+/* mobile menu  */
+
+#mobile-menu {
+  position: fixed;
+  justify-content: left;
+  background: #3b3e45;
+  height: 100vh;
+  width: 100%;
+  top: 4rem;
+  z-index: 998;
+}
+
+#mobilelist ul {
+  display: block;
+  height: 100%;
+  border: 1px solid red;
+}
+
+#mobilelist li {
+  border: #333;
+  color: white;
+  line-height: 40px;
+  list-style: none;
+}
+
+#mobilelist li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* #introduction section */
+
+#introduction {
+  background-image: url(images/stars.jpg);
+  background-size: cover;
+  margin-top: 4rem;
+}
+
+#introduction div {
+  background-color: rgba(248, 248, 248, 0.75);
+  min-height: 30rem;
+  width: 100%;
+}
+
+#intro h1 {
+  background: url(images/cinema.webp);
+  background-size: contain;
+  font-size: 40px;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  /* stylelint-disable-next-line csstree/validator */
+  -moz-background-clip: text;
+  /* stylelint-disable-next-line csstree/validator */
+  background-clip: text;
+  color: transparent;
+  padding: 0.625rem;
+}
+
+#intro h1::before {
+  content: "welcome to Holliwood";
+  color: #ff5438;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.625rem;
+}
+
+.description {
+  border: 3px solid white;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+time {
+  color: #595959;
+  font-size: 20px;
+}
+
+#intro h3 {
+  color: #3b3e45;
+  padding: 10px;
+}
+
+/* event section  */
+#event {
+  background: url(pattern_bg.png), #282b32;
+  mix-blend-mode: normal;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+#eventtitle {
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+#agenda {
+  display: grid;
+  width: 95%;
+  grid-template-columns: auto;
+  gap: 0.313rem;
+  padding: 0.688rem 0.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0;
+  gap: 0.558rem;
+  background: url(pattern_bg.png), #3b3e45;
+}
+
+.card h2 {
+  flex: 2;
+  font-size: small;
+  color: #ff5438;
+  padding: 0.625rem;
+  width: 20%;
+}
+
+.card p {
+  flex: 4;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.669rem;
+  line-height: 22px;
+}
+
+#event button {
+  background-color: #ff5438;
+  width: 12rem;
+  height: 3rem;
+  margin: auto;
+  border: none;
+  color: #fff;
+}
+
+#footdiv {
+  display: flex;
+  border: 1px solid rgb(142, 141, 141);
+  border-radius: 5px;
+  width: 98%;
+  height: 2rem;
+  justify-content: center;
+}
+
+#arrow {
+  padding-left: 0.2rem;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+/*
+#about html styles */
+
+#aboutintro {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+}
+
+#aboutintro h1 {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 900;
+  color: #ff5438;
+}
+
+#aboutintro h1::before {
+  content: "welcome to Holliwood";
+  color: #ff5438;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#eventabout h2,
+#eventabout p {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#eventabout p,
+#past p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #838383;
+}
+
+footer img {
+  width: 4rem;
+  height: 2rem;
+}
+
+#eventabout img {
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem 0;
+}
+
+#past {
+  display: flex;
+  text-align: center;
+}
+
+#c1::before,
+#c2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  z-index: -1;
+}
+
+#c1,
+#c2 {
+  position: relative;
+  background-image: url(images/c1.jpg);
+  background-size: cover;
+  height: 11.4rem;
+  width: 20.8rem;
+  margin-bottom: 1rem;
+  z-index: -2;
+}
+
+#c2 {
+  background-image: url(images/c2.jpg);
+}
+
+#c2 p,
+#c1 p {
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  z-index: 2;
+}
+
+#aboutintro p:nth-of-type(1) {
+  background-color: #fff;
+  padding: 0 1rem;
+  opacity: 100%;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.563rem;
+}
+
+#aboutintro p:nth-of-type(2) {
+  background-color: #f7f7f8;
+  padding: 0 2rem;
+  opacity: 100%;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.563rem;
+}
+
+#c1 h2,
+#c2 h2 {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+}
+
+#partners {
+  background-color: #414246;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#partners span {
+  border: 2px solid #a04038;
+  width: 2rem;
+  margin: -1rem auto 0;
+}
+
+#partners div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#partners img {
+  width: 60px;
+  height: 2rem;
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer p {
+  color: #3b3e45;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+}
