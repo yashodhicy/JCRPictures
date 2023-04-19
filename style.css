@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 html {
   scroll-behavior: smooth;
 }
@@ -52,7 +53,7 @@ header nav a {
   width: 100%;
 }
 
-#logo {
+.logo {
   align-self: center;
   height: 3rem;
   width: 5rem;
@@ -103,11 +104,6 @@ header nav a {
   transform: rotate(-45deg);
 }
 
-.rotate :nth-child(2),
-.rotate:nth-child(3) {
-  top: 50%;
-}
-
 /* mobile menu  */
 
 #mobile-menu {
@@ -120,10 +116,13 @@ header nav a {
   z-index: 998;
 }
 
+#mobile-menu a img {
+  display: none;
+}
+
 #mobilelist ul {
   display: block;
   height: 100%;
-  border: 1px solid red;
 }
 
 #mobilelist li {
@@ -138,6 +137,17 @@ header nav a {
   text-decoration: none;
 }
 
+#fifth {
+  display: none;
+  color: #ff5438;
+  margin-right: 1rem;
+  border: 2px solid #ff5438;
+  background-color: white;
+  height: 2rem;
+  margin-top: 1rem;
+  font-family: 'lato',sans-serif;
+}
+
 /* #introduction section */
 
 #introduction {
@@ -146,10 +156,24 @@ header nav a {
   margin-top: 4rem;
 }
 
-#introduction div {
+#intro::before,
+#aboutintro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(248, 248, 248, 0.75);
+  z-index: -1;
+}
+
+#intro,
+#aboutintro {
+  background-color: transparent;
   min-height: 30rem;
-  width: 100%;
+  z-index: 1;
 }
 
 #intro h1 {
@@ -192,7 +216,7 @@ time {
 
 /* event section  */
 #event {
-  background: url(pattern_bg.png), #282b32;
+  background: url(images/pattern.png), #292a2c;
   mix-blend-mode: normal;
   padding-bottom: 1rem;
   width: 100%;
@@ -207,7 +231,6 @@ time {
 
 #agenda {
   display: grid;
-  width: 95%;
   grid-template-columns: auto;
   gap: 0.313rem;
   padding: 0.688rem 0.75rem;
@@ -220,7 +243,7 @@ time {
   align-items: center;
   padding: 0;
   gap: 0.558rem;
-  background: url(pattern_bg.png), #3b3e45;
+  background-color: rgb(59, 62, 69, 0.9);
 }
 
 .card h2 {
@@ -273,6 +296,11 @@ time {
   line-height: 28px;
 }
 
+.partnershide,
+#rights {
+  display: none;
+}
+
 /* add style to dianamic div  */
 
 #namelist {
@@ -296,7 +324,9 @@ time {
   padding: 0 0.5rem;
   width: 6.69rem;
   height: 6.65rem;
-  flex: 1;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .text {
@@ -477,10 +507,120 @@ footer {
   align-items: center;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 footer p {
   color: #3b3e45;
   font-weight: 700;
   font-size: 10px;
   line-height: 13px;
+}
+
+/* -------------Desktop version ---------- */
+
+@media screen and (min-width: 768px) {
+  header {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #mobile-menu {
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-direction: row;
+    height: 4rem;
+    justify-content: space-between;
+  }
+
+  #mobilelist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #mobile-menu a img {
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    height: 3rem;
+  }
+
+  #fifth {
+    display: block;
+  }
+
+  #mobilelist li a {
+    color: #868686;
+  }
+
+  #mobile-nav {
+    display: none;
+  }
+
+  /* -----section1----- */
+  #intro {
+    width: 50%;
+    margin: auto;
+  }
+
+  /* -----section2----- */
+  #agenda {
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card h2 {
+    flex: 1;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card p {
+    margin-top: 0;
+    padding: 0;
+    flex: 7;
+    align-items: center;
+  }
+
+  /* ------dyanamic section------ */
+  .person:nth-child(n+3) {
+    display: flex;
+  }
+
+  #namelist {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .partnershide {
+    display: flex;
+  }
+
+  #footdiv {
+    display: none;
+  }
+
+  #rights {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
 }
