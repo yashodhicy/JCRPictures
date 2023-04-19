@@ -613,6 +613,10 @@ footer p {
     display: flex;
   }
 
+  #partners div {
+    display: flex;
+  }
+
   #footdiv {
     display: none;
   }
