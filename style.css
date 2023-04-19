@@ -39,6 +39,10 @@ header {
   z-index: 999;
 }
 
+header nav a {
+  margin: auto;
+}
+
 .hide {
   display: none;
 }
@@ -181,7 +185,7 @@ time {
   font-size: 20px;
 }
 
-#intro h3 {
+.media {
   color: #3b3e45;
   padding: 10px;
 }
@@ -261,9 +265,70 @@ time {
   width: 0.5rem;
 }
 
-/*
-#about html styles */
+#titlenomines {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
 
+/* add style to dianamic div  */
+
+#namelist {
+  margin-top: 1rem;
+  display: grid;
+  width: 100%;
+  gap: 24px;
+  grid-template-columns: auto;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+}
+
+.person:nth-child(n+3) {
+  display: none;
+}
+
+.cphoto {
+  padding: 0 0.5rem;
+  width: 6.69rem;
+  height: 6.65rem;
+  flex: 1;
+}
+
+.text {
+  flex: 3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  margin-left: 1rem;
+}
+
+.text h3 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.text h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  color: #f78c89;
+}
+
+.text p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+}
+
+/* #about html styles */
 #aboutintro {
   width: 90%;
   height: 100%;
@@ -384,7 +449,7 @@ footer img {
   line-height: 28px;
 }
 
-#partners span {
+.topicline {
   border: 2px solid #a04038;
   width: 2rem;
   margin: -1rem auto 0;
