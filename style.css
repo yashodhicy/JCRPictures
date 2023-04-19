@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  font-family: 'lato';
+}
 
 body{
   display: flex;
@@ -47,8 +50,8 @@ header{
 
 #logo {
   align-self: center;
-  height: 2rem;
-  width: 3rem;
+  height: 3rem;
+  width: 5rem;
   margin: auto;
 }
 .hamburger,
@@ -141,12 +144,10 @@ header{
   background-image: url(images/stars.jpg);
   background-size: cover;
   margin-top: 4rem;
-  min-height: 30rem;
 }
 
 #introduction div {
-  background-color: #f8f8f8;
-  opacity: 75%;
+  background-color: rgba(248, 248, 248, 0.75);
   min-height: 30rem;
   width: 100%;
 
@@ -155,7 +156,7 @@ header{
 #intro h1{
   background:url(images/cinema.webp);
   background-size: contain;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 900;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -165,7 +166,7 @@ header{
 }
 
 #intro h1::before{
-  content: "Hello world of cinema";
+  content: "welcome to Holliwood";
   color:#FF5438;
   font-size: 24px;
   font-weight: 600;
@@ -194,6 +195,7 @@ time {
   background: url(pattern_bg.png), #282B32;
   mix-blend-mode: normal;
   padding-bottom: 1rem;
+  width:100%;
 }
 
 #eventtitle {
@@ -248,3 +250,176 @@ time {
   border: none;
   color: #FFFFFF;
 }
+
+#footdiv {
+  border: 1px solid rgb(142, 141, 141);
+  border-radius: 5px;
+  width: 98%;
+  height: 2rem;
+}
+
+#arrow {
+  padding-left: 0.2rem;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+/* 
+#about html styles */
+
+#aboutintro {
+  width:90%;
+  height: 100%;
+  text-align: center;
+  
+
+}
+
+#aboutintro h1 {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 900;
+  color:#FF5438;
+ 
+
+}
+
+#aboutintro h1::before{
+  content: "welcome to Holliwood";
+  color:#FF5438;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#aboutintro p:nth-of-type(1) {
+  background-color: #ffffff;
+  padding:0 1rem;
+  opacity: 100%;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.563rem;
+}
+
+#aboutintro p:nth-of-type(2) {
+  background-color: #F7F7F8;
+  padding: 0 2rem;
+  opacity: 100%;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.563rem;
+}
+
+#eventabout h2,p {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#eventabout img{
+  width: 20rem;
+  height: 20rem;
+  padding:1rem 0;
+}
+
+#eventabout p,
+#past p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color:#838383;
+}
+
+#past {
+  display: flex;
+  text-align:center;
+}
+#c1::before,
+#c2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  z-index:-1;
+}
+
+#c1,
+#c2 {
+  position: relative;
+  background-image:url(images/c1.jpg);
+  background-size: cover;
+  height: 11.4rem;
+  width: 20.8rem;
+  margin-bottom: 1rem;
+  z-index:-2;
+  
+}
+
+#c2 {
+  background-image:url(images/c2.jpg);
+}
+
+#c2 p,
+#c1 p {
+  position: relative;
+  color:white;
+  font-size: 1rem;
+  font-weight: 800;
+  z-index: 2;
+}
+
+#c1 h2,
+#c2 h2 {
+  position: relative;
+  color:white;
+  font-size: 3rem ;
+}
+
+#partners {
+  background-color: #414246;
+}
+
+#partners {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+partners span{
+  border: 2px solid #A04038;
+  width: 3rem;
+}
+#partners div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+
+#partners img {
+  width: 60px;
+  height: 2rem;
+  padding: 1rem;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  width: 4rem;
+  height: 2rem;
+}
+footer p {
+  color: #3B3E45;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+}
+
