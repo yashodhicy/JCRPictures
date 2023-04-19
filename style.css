@@ -154,6 +154,7 @@ header nav a {
   background-image: url(images/stars.jpg);
   background-size: cover;
   margin-top: 4rem;
+  justify-content: center;
 }
 
 #intro::before,
@@ -482,7 +483,7 @@ footer img {
 .topicline {
   border: 2px solid #a04038;
   width: 2rem;
-  margin: -1rem auto 0;
+  margin: 1rem auto 1rem;
 }
 
 #partners div {
@@ -564,6 +565,7 @@ footer p {
   }
 
   /* -----section1----- */
+
   #intro {
     width: 50%;
     margin: auto;
@@ -622,5 +624,33 @@ footer p {
     justify-content: space-around;
     align-items: center;
     padding: 0.5rem 0;
+  }
+
+  /* ------about page----- */
+  #aboutintro {
+    width: 60%;
+    margin-top: 8rem;
+  }
+
+  #pastceremonies {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .partnersabouthide {
+    display: none;
+  }
+
+  #footeraobout {
+    background-color: #292a2c;
+    height: 4rem;
+  }
+
+  #footeraobout p {
+    color:#f8f8f8;
+    
   }
 }
