@@ -127,7 +127,9 @@ You can deploy this project using:
 - Twitter: https://twitter.com/Yashichathucy
 - LinkedIn: https://www.linkedin.com/in/yashodhichathurangi/
 
-
+👤 **Cindy Shin**
+- GUI designer of the original template
+- webpage - https://www.behance.net/adagio07
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
