@@ -472,6 +472,7 @@ time {
 #past {
   display: flex;
   text-align: center;
+  border-top: 1px solid var(--lightgray);
 }
 
 #c1::before,
@@ -602,7 +603,7 @@ footer {
 
   #mobile-menu {
     display: flex;
-    top: 2rem;
+    top: 1.8rem;
     left: 0;
     background-color: white;
     flex-direction: row;
@@ -674,6 +675,9 @@ footer {
 
   #namelist {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 2rem;
   }
 
   .partnershide {
@@ -723,4 +727,5 @@ footer {
   #footeraobout p {
     color: #f8f8f8;
   }
+
 }
