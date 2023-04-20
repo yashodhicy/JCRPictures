@@ -28,20 +28,52 @@ section {
 }
 
 header {
-  background-color: white;
+  background-color: transparent;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   position: fixed;
   top: 0;
-  height: 3.9rem;
   width: 100%;
   margin: 0;
   z-index: 999;
 }
 
-header nav a {
-  margin: auto;
+#grayheader {
+  display: none;
+  position: fixed;
+  order: 1;
+  width: 100%;
+  height: 30px;
+  background-color: #292a2c;
+  top: 0;
+  justify-content: right;
+  padding-right: 2rem;
+  gap: 0.5rem;
+}
+
+#graylist {
+  position: relative;
+  display: flex;
+  align-items: center;
+  right: 6rem;
+}
+
+#graylist li {
+  list-style: none;
+}
+
+.grayimages {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+#logancor {
+  margin: 0.5rem auto;
 }
 
 .hide {
@@ -49,8 +81,11 @@ header nav a {
 }
 
 #mobile-nav {
+  order: 2;
   display: flex;
   width: 100%;
+  top: 2rem;
+  justify-content: space-around;
 }
 
 .logo {
@@ -130,6 +165,8 @@ header nav a {
   color: white;
   line-height: 40px;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #mobilelist li a {
@@ -139,9 +176,12 @@ header nav a {
 
 #fifth {
   display: none;
-  color: #ff5438;
-  margin-right: 1rem;
-  border: 2px solid #ff5438;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ec4327;
+  margin-left: 4rem;
+  border: 2px solid #ec4327;
   background-color: white;
   height: 2rem;
   margin-top: 1rem;
@@ -153,7 +193,6 @@ header nav a {
 #introduction {
   background-image: url(images/stars.jpg);
   background-size: cover;
-  margin-top: 4rem;
   justify-content: center;
 }
 
@@ -172,6 +211,7 @@ header nav a {
 
 #intro,
 #aboutintro {
+  margin-top: 4rem;
   background-color: transparent;
   min-height: 30rem;
   z-index: 1;
@@ -197,6 +237,7 @@ header nav a {
   font-size: 24px;
   font-weight: 600;
   padding: 0.625rem;
+  margin-top: 4rem;
 }
 
 .description {
@@ -341,7 +382,6 @@ time {
   height: 4rem;
   background-image: url('images/chess.jpg');
   background-size: contain;
-  background-repeat: none;
   opacity: 1;
   z-index: -1;
 }
@@ -374,14 +414,6 @@ time {
   font-weight: 700;
   font-size: 9px;
 }
-
-/* .chess {
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  top: 0;
-  left: 0;
-} */
 
 /* #about html styles */
 #aboutintro {
@@ -542,7 +574,7 @@ footer p {
 /* -------------Desktop version ---------- */
 
 @media screen and (min-width: 768px) {
-  header {
+  #mobile-nav {
     display: none;
   }
 
@@ -552,20 +584,27 @@ footer p {
     justify-content: center;
   }
 
+  #grayheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 190px 0 0;
+    gap: 20px;
+  }
+
   #mobile-menu {
     display: flex;
-    top: 0;
+    top: 2rem;
     left: 0;
     background-color: white;
     flex-direction: row;
     height: 4rem;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   #mobilelist {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 2rem;
   }
 
@@ -577,22 +616,18 @@ footer p {
   }
 
   #fifth {
-    display: block;
+    display: flex;
   }
 
   #mobilelist li a {
     color: #868686;
   }
 
-  #mobile-nav {
-    display: none;
-  }
-
   /* -----section1----- */
 
   #intro {
     width: 50%;
-    margin: auto;
+    margin: 4rem auto;
   }
 
   /* -----section2----- */
