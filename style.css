@@ -9,9 +9,10 @@ html {
 
 :root {
   --gray: #272a31;
-  --orange:#ec5242;
+  --orange: #ec5242;
   --lightgray: #d3d3d3;
 }
+
 body {
   display: flex;
   flex-direction: column;
