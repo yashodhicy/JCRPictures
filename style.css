@@ -1,4 +1,4 @@
-/* stylelint-disable no-descending-specificity */
+
 html {
   scroll-behavior: smooth;
 }
@@ -240,7 +240,7 @@ header {
 }
 
 #intro h1::before {
-  content: "welcome to Holliwood";
+  content: "Welcome to Hollywood";
   color: var(--orange);
   font-size: 24px;
   font-weight: 600;
@@ -458,12 +458,12 @@ time {
   color: #838383;
 }
 
-footer img {
+.footerimage {
   width: 4rem;
   height: 2rem;
 }
 
-#eventabout img {
+.eventaboutimg {
   width: 20rem;
   height: 20rem;
   padding: 1rem 0;
@@ -558,7 +558,7 @@ footer img {
   gap: 10px;
 }
 
-#partners img {
+.partnersimg {
   width: 60px;
   height: 2rem;
   padding: 1rem;
@@ -572,7 +572,7 @@ footer {
   align-items: center;
 }
 
-footer p {
+.footerp {
   color: var(--gray);
   font-weight: 700;
   font-size: 10px;
