@@ -60,12 +60,13 @@ const container = document.getElementById('namelist');
 const fragment = document.createDocumentFragment();
 
 nomines.forEach((nominy) => {
-  const celebrity = document.createElement('div');
+  const celebrity = document.createElement('article');
   celebrity.classList.add('person');
 
   const imageEl = document.createElement('img');
   imageEl.src = nominy.image;
   imageEl.classList.add('cphoto');
+  imageEl.alt = 'celebrity photo';
   celebrity.appendChild(imageEl);
 
   const textEl = document.createElement('div');
