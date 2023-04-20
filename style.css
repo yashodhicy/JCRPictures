@@ -315,6 +315,8 @@ time {
 .person {
   display: flex;
   justify-content: center;
+  padding-left: 1rem;
+  position: relative;
 }
 
 .person:nth-child(n+3) {
@@ -328,6 +330,20 @@ time {
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
+}
+
+.person::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-image: url('images/chess.jpg');
+  background-size: contain;
+  background-repeat: none;
+  opacity: 1;
+  z-index: -1;
 }
 
 .text {
@@ -358,6 +374,14 @@ time {
   font-weight: 700;
   font-size: 9px;
 }
+
+/* .chess {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 0;
+  left: 0;
+} */
 
 /* #about html styles */
 #aboutintro {
@@ -629,6 +653,7 @@ footer p {
     align-items: center;
     padding: 0.5rem 0;
   }
+
 
   /* ------about page----- */
   #aboutintro {
