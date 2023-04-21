@@ -12,27 +12,39 @@
 
 <body>
     <header>
-        <nav id="mobile-nav">
+        <nav>
+            <div id="grayheader">
+                <ul id="graylist">
+                <li class="grayimages"><img  src="images/facebook.png" alt="facebook"></li>
+                <li class="grayimages"><img  src="images/twitter.png" alt="twitter"></li>
+                <li class="grayimages">English</li>
+                <li class="grayimages">My Page</li>
+                <li class="grayimages">Logout</li>
+                </ul>
+            </div>
+            <div id="mobile-nav">
             <button class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </button>
-            <a href="index.html"><img id="logo" alt="logo" src="images/JCR.gif" loop="infinite"></a>
+            <a href="index.html" id="logancor"><img class="logo" alt="logo" src="images/JCR.gif" loop="infinite"></a>
+            </div>
         </nav>
     </header>
 
     <section id="menu" class="hide">
         <nav id="mobile-menu">
-
+            <a href="index.html"> <img class="logo" alt="logo" src="images/JCR.gif" loop="infinite"></a>
             <ul id="mobilelist">
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact-form">Movies</a></li>
-                <li><a href="#contact-form">TV series</a></li>
-                <li><a href="#contact-form">commics</a></li>
-                <li><a href="#contact-form">Press Releases</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV series</a></li>
+                <li><a href="#">commics</a></li>
+                <li><a href="#">Press Releases</a></li>
             </ul>
+            <button id="fifth" >JCR award</button>
         </nav>
     </section>
     <section id="introduction" class="aboutintroduction">
@@ -46,12 +58,13 @@
         <h2>JCR Award Ceremony 2023 Logo</h2>
         <span class="topicline"></span>
         <p>This logo is design by Jason Christoper and own by JCR company.</p>
-        <img src="images/JCR.gif">
+        <img class="eventaboutimg" src="images/JCR.gif" alt="logo">
     </section>
     <section id="past">
-        <h2>see the past JCR award ceremonies</h2>
+        <h2>See the past JCR award ceremonies</h2>
         <span class="topicline"></span>
         <p>Take a look at the past two JCR Award ceremonies which took place in LA and in Chicago</p>
+        <div id="pastceremonies">
         <div id="c1">
             <h2>2022</h2>
             <p>JCR Award ceremony in LA</p>
@@ -60,21 +73,22 @@
             <h2>2021</h2>
             <p>JCR Award ceremony in Chicago</p>
         </div>
+        </div>
     </section>
-    <section id="partners">
+    <section id="partners" class="partnersabouthide">
         <h2>Partners</h2>
         <span class="topicline"></span>
         <div>
-            <img src="images/JCRd.jpg">
-            <img src="images/JCRlg.jpg">
-            <img src="images/google.jpg">
-            <img src="images/marvel.jpg">
-            <img src="images/WB.jpg">
+            <img class="partnersimg" src="images/JCRd.jpg" alt="parter1">
+            <img class="partnersimg" src="images/JCRlg.jpg" alt="parter1">
+            <img class="partnersimg" src="images/google.jpg" alt="parter1">
+            <img class="partnersimg" src="images/marvel.jpg" alt="parter1">
+            <img class="partnersimg" src="images/WB.jpg" alt="parter1">
         </div>
     </section>
 </body>
-<footer>
-    <img src="images/JCRd.jpg" alt="ownerlogo">
+<footer id="footeraobout">
+    <img class="footerimage" src="images/JCRd.jpg" alt="ownerlogo">
     <p>JCR Pictures <br>Some right reserved.</p>
     
 </footer>

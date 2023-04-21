@@ -21,11 +21,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portofolio - <a name="about-project"></a>
+# 📖 JCR award ceremony page - <a name="about-project"></a>
 
 
 
-** Portofolio** is a project that create simple portofolio using html and css for the learning purpose.
+** JCR award ceremony page** is a project that create a webpage for a award ceremony using html,css and js for the learning purpose.
 
 ## 🛠 Built With <a name="built-with"></a>
   -Visual Code Studio
@@ -36,6 +36,7 @@
 
  -HTML <br>
  -CSS
+ -JavaScript
 
 <details>
   <summary>Client</summary>
@@ -57,8 +58,9 @@
 
 
 
-- **sigma portofolio template - 2 sections**
+- **Desktop and mobile version**
 - **CSS styling**
+- **JS dyanamic sections**
 - **linters**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -69,10 +71,10 @@
 
 >this is the link to my live demo of the portofolio page. 
 
-- https://yashodhicy.github.io/
+- https://yashodhicy.github.io/JCRPictures
 
 -introduction video 
-https://www.loom.com/share/51724b9d1bf54275b7e86a7489f869f3
+https://www.loom.com/share/5a45ac605dcb499487e10e91c0416b03
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,9 +98,9 @@ In order to run this project you need:
 
 Clone or make a copy of this repository to your desired folder: open this with your code editor
 
-- repo link - git@github.com:yashodhicy/Microverseday3pr
+- repo link - https://github.com/yashodhicy/JCRPictures
 
-- SSH - git@github.com:yashodhicy/Microverseday3pr.git
+- SSH - git@github.com:yashodhicy/JCRPictures.git
 
 ### View
 
@@ -125,20 +127,16 @@ You can deploy this project using:
 - Twitter: https://twitter.com/Yashichathucy
 - LinkedIn: https://www.linkedin.com/in/yashodhichathurangi/
 
-
-👤colloborator - **Zohra Neda**
-
-- GitHub: [@zohra-neda](https://github.com/zohra-neda)
-- Twitter: [@zohra_neda](https://twitter.com/zohra_neda)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zohra-neda-3716b720b/)
-
+👤 **Cindy Shin**
+- GUI designer of the original template
+- webpage - https://www.behance.net/adagio07
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **new sections will be added to html**
 - [ ] **new styles**
-- [ ] ** use more designs and tech stacks**
+- [ ] **use more designs and tech stacks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,7 +171,7 @@ I would like to thank my code partners , my morning session teammates and code r
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/yashodhicy/Microverseday3pr/blob/add-license-1/LICENSE) licensed.
+This project is [MIT](https://github.com/yashodhicy/JCRPictures/blob/main/LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
